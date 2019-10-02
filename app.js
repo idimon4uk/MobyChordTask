@@ -3,9 +3,8 @@ let fs = require('fs');
 let path = process.cwd();
 let source = path + '/'+process.argv[2];
 let defaultDir = path + '/' + Math.random()
-let jsonFileName = process.argv[3] + '.json'
+let jsonFileName = (process.argv[3]||'data') + '.json'
 
-console.log(process.cwd(),process.argv)
 
 String.prototype.replaceAll = function(search, replacement) {
     var target = this;
@@ -184,7 +183,9 @@ extractPromise(source, defaultDir)
     }).then(res=>{
         return deleteDir(defaultDir);
     }).then(res=>{
-        console.log(res)
+        console.log(
+            `Check ${jsonFileName} file`
+        )
     })
     .catch(err=>{
         console.log(err);
