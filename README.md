@@ -1,10 +1,8 @@
 # MobyChordTask
 Test task
 
-# How to use
-
-Install
+# Install
 npm install 
 
-Run
+# Run
 node app.js <<path_to_*.zip>> <<name_of_json_file>>
