@@ -3,8 +3,8 @@ Test task
 
 # How to use
 
-$ Install
-//npm install 
+Install
+npm install 
 
-$ Run
-//node app.js <path to *.zip> <name of json file>
+Run
+node app.js <<path_to_*.zip>> <<name_of_json_file>>
